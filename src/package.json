@@ -1,0 +1,14 @@
+{
+  "name": "flash-card",
+  "version": "1.0.0",
+  "description": "flashcard application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nghiem Minh Hoang",
+  "license": "ISC",
+  "dependencies": {
+    "menubar": "^4.1.0"
+  }
+}

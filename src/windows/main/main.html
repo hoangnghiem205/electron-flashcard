@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Flashcard</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="../../bower_components/angular/angular.min.js"></script>
+</head>
+
+<body class="flashcard">
+    <ul ng-controller="MainCtrl as vm" class="ng-cloak">
+        <li id="Card">
+            <div id="WrapperImage" ng-click="vm.changeWord()">
+                <img src="../../{{vm.currentWord.image}}" alt="" width="296px" height="300px">
+            </div>
+            <div id="Middle">
+                <div class="box card-border hira">
+                    <div class="line left">{{vm.currentWord.hira}}</div>
+                </div>
+                <div class="box card-border romaji">
+                    <div class="line-right">{{vm.currentWord.romaji}}</div>
+                </div>
+            </div>
+            <div id="Bottom">
+                <div id="Meaning">{{vm.currentWord.meaning}}</div>
+                <div id="Kanji">
+                    {{vm.currentWord.kanji}}
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script>require('./main.controller.js');</script>
+    <script src="../../common/utils.js"></script>
+    <script src="./main.view.js"></script>
+    <script>
+        angular
+            .element(document)
+            .ready(function() {
+                angular.bootstrap(document.body, ['MainView']);
+            });
+    </script>
+</body>
+
+</html>

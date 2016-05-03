@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="./config.css">
+        <script src="../../bower_components/angular/angular.min.js"></script>
+        <script src="../../bower_components/jquery/jquery.min.js"></script>
+        <script>
+            
+            $(function () {
+                // var rangeSlider = function(){
+                //     var slider = $('.range-slider'),
+                //         range = $('.range-slider__range'),
+                //         value = $('.range-slider__value');
+                    
+                //     range.on("change",function(){
+                //         value.each(function(){
+                //             var value = $(this).prev().attr('value');
+                //             $(this).html(value);
+                //         });
+                //         range.on('input', function(){
+                //             $(this).next(value).html(this.value);
+                //         });
+                //     });
+                // };
+
+                // rangeSlider();
+                
+                var slider = $('.range-slider'),
+                    range = $('.range-slider__range'),
+                    value = $('.range-slider__value');
+                    
+                value.text(range.val());
+                    
+                range.on('input change', function () {
+                    value.text($(this).val());
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div id="wrapper" ng-controller="ConfigCtrl as vm" class="ng-cloak">
+            <div class="panel">
+                <h1>Thời gian chuyển từ</h1>
+                <div class="content">
+                    <div class="range-slider">
+                        <input ng-model="vm.min" class="range-slider__range" value="{{vm.min}}" type="range" min="1" max="10">
+                        <span class="range-slider__value">{{vm.min}}</span>
+                    </div>  
+                </div>
+            </div>
+            <div class="panel">
+                <h1>Chọn bài học</h1>
+                <div class="content">
+                    <table>
+                        <tr ng-repeat="item in vm.data">
+                            <td><input type="checkbox" value="{{item.title}}" ng-model="vm.seletedData[item.title].checked" ng-change="vm.selectLesson(this, item.title)" /></td>
+                            <td>{{item.title}}</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <a ng-click="vm.save()" class="btn btn-green">Lưu lại</a>    
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./config.view.js"></script>
+    <script>
+        angular
+            .element(document)
+            .ready(function() {
+                angular.bootstrap(document.body, ['ConfigView']);
+            });
+    </script>
+</html>

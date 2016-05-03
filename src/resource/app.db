@@ -1,0 +1,46 @@
+{
+	"topic": "みんなの日本語",
+	"lessons": [{
+		"title": "＃１",
+		"words": [{
+			"kanji": "海",
+			"hira": "うみ",
+			"romaji": "umi",
+			"image": "images/umi.png",
+			"meaning": "biển"
+		}, {
+			"kanji": "学校",
+			"hira": "がっこう",
+			"romaji": "gakkou",
+			"image": "images/gakkou.png",
+			"meaning": "trường học"
+		}, {
+			"kanji": "海1",
+			"hira": "うみ1",
+			"romaji": "umi",
+			"image": "images/umi.png",
+			"meaning": "biển1"
+		}, {
+			"kanji": "学校1",
+			"hira": "がっこう1",
+			"romaji": "gakkou1",
+			"image": "images/gakkou.png",
+			"meaning": "trường học1"
+		}]
+	}, {
+		"title": "＃２",
+		"words": [{
+			"kanji": "kanji3",
+			"hira": "hira3",
+			"romaji": "romaji3",
+			"image": "image3",
+			"meaning": "meaning3"
+		}, {
+			"kanji": "kanji4",
+			"hira": "hira4",
+			"romaji": "romaji4",
+			"image": "image4",
+			"meaning": "meaning4"
+		}]
+	}]
+}

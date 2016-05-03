@@ -1,0 +1,114 @@
+body {
+    font-family: "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    border-radius: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-radius: 18px;
+    background-color: white;
+}
+
+ul li {
+    list-style: none;
+    height: 100%;
+}
+
+#WrapperImage {
+    border-bottom: 2px solid #ce6b13;
+    height: 300px;
+}
+
+#WrapperImage img {
+    border-radius: 18px;
+}
+
+#Middle {
+    height: 9px;
+}
+
+.flashcard {
+    border: 2px solid #ce6b13;
+    margin: 0;
+    height: 416px;
+    overflow: hidden;
+}
+
+.card-border {
+    border: 2px solid #ce6b13;
+}
+
+.hira {
+    position: relative;
+    left: -19px;
+    top: -22px;
+    width: 100px;
+    text-align: right;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.line {
+    position: relative;
+    left: 15px;
+    width: 100px;
+    color: #ce6b13;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.0rem;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.left {
+    border-left: 2px solid #ce6b13;
+}
+
+.right {
+    border-right: 2px solid #ce6b13;
+}
+
+.hira span {
+    border-left: 2px solid #ce6b13;
+}
+
+.romaji {
+    position: relative;
+    left: 213px;
+    top: -64px;
+    width: 100px;
+    text-align: right;
+    border-radius: 25px;
+    background-color: #ce6b13;
+}
+
+.romaji span {
+    border-left: 2px solid #ce6b13;
+}
+
+.line-right {
+    position: relative;
+    left: 16px;
+    width: 60px;
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 35px;
+    font-size: 1.0rem;
+    padding-left: 5px;
+    text-align: left;
+}
+
+#Meaning {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ce6b13;
+}
+
+#Kanji {
+    text-align: center;
+    color: #ce6b13;
+    font-size: 3rem;
+    height: 100%;
+}
